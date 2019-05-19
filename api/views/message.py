@@ -5,7 +5,8 @@ from rest_framework.viewsets import GenericViewSet, ViewSetMixin
 from ..models import Goods
 from ..utils.redis_server import redis_server
 from .list import GoodsSerializer
-from ast import literal_eval
+from ..utils.rabbitmq_client import InterRpcClient
+from ast import literal_eval  # 将字符串转化成字典
 from ..utils.activeMQ import send_to_queue, receive_from_queue
 
 import time
@@ -22,6 +23,8 @@ class MessageView(ViewSetMixin, APIView):
 
     def message(self, request, *args, **kwargs):
         data = request.data
+        # 把数据存进去从队列中拿出来
+        data = eval(InterRpcClient().call(data))
         print(data)
 
         ret = {"code": 1000}
@@ -35,7 +38,6 @@ class MessageView(ViewSetMixin, APIView):
             return Response(ret)
         # 在查询id是否被禁止
         # check_data = literal_eval(redis_server().get(data['username']).decode("utf-8"))
-        
         if check_data[1] != data['token'] or check_data[2] == 0:
             print(check_data[2] == 0, '======')
             ret["code"] = 1001
