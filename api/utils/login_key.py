@@ -5,8 +5,8 @@ def weibo():
 
 
 def qq():
-    client_id = 1108968848
-    client_secret = 'gp4zQO13YP3oHEae'
+    client_id = 101576925
+    client_secret = '95bfd07354fcd7188507b8bea4ff679a'
 
     return client_id, client_secret
 

@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^api/(?P<version>\w+)/', include('api.urls')),
     # 自己写的
     url(r'^login/weibo/', view.proxy_login_weibo),
-    url(r'^login/qq/', view.proxy_login_qq),
+    url(r'^login/qq$', view.proxy_login_qq),
     url(r'^login/weixin/', view.proxy_login_weixin),
     # 第三方登录组件
     url('', include('social_django.urls', namespace='social'))

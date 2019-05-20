@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9260cd9-5e81-477b-92f0-22613890a253" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/emit_log3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/emit_log_direct4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/emit_log_topic5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/new_task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/receive1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/receive_logs_direct4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/receive_logs_topic5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/recevice_logs3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/rpc_client6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/rpc_server6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/send1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/utils/rabbitmq_test/worker2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondKill/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecondKill/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/utils/login_key.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/utils/login_key.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,9 +24,9 @@
     <SUITE FILE_PATH="coverage/SecondKill$test.coverage" NAME="test Coverage Results" MODIFIED="1557129042809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
     <SUITE FILE_PATH="coverage/SecondKill$rabbitmq_server.coverage" NAME="rabbitmq_server Coverage Results" MODIFIED="1558275131501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/utils" />
     <SUITE FILE_PATH="coverage/SecondKill$rpc_client6.coverage" NAME="rpc_client6 Coverage Results" MODIFIED="1558272208115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/utils/rabbitmq_test" />
-    <SUITE FILE_PATH="coverage/SecondKill$tests.coverage" NAME="tests Coverage Results" MODIFIED="1557295773048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
     <SUITE FILE_PATH="coverage/SecondKill$recevice_logs3.coverage" NAME="recevice_logs3 Coverage Results" MODIFIED="1558261508095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/utils/rabbitmq_test" />
     <SUITE FILE_PATH="coverage/SecondKill$emit_log_topic5.coverage" NAME="emit_log_topic5 Coverage Results" MODIFIED="1558262420254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/utils/rabbitmq_test" />
+    <SUITE FILE_PATH="coverage/SecondKill$tests.coverage" NAME="tests Coverage Results" MODIFIED="1558347772031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
     <SUITE FILE_PATH="coverage/SecondKill$receive.coverage" NAME="receive Coverage Results" MODIFIED="1558248353094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/utils/rabbitmq_test" />
     <SUITE FILE_PATH="coverage/SecondKill$send.coverage" NAME="send Coverage Results" MODIFIED="1558249408725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/utils/rabbitmq_test" />
     <SUITE FILE_PATH="coverage/SecondKill$emit_log_direct4.coverage" NAME="emit_log_direct4 Coverage Results" MODIFIED="1558261816063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api/utils/rabbitmq_test" />
@@ -82,11 +69,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SecondKill/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#644#685#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="1736">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
               <folding>
                 <element signature="e#14#104#0" expanded="true" />
               </folding>
@@ -97,20 +96,8 @@
       <file leaf-file-name="login_key.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/utils/login_key.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="56">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -118,7 +105,7 @@
       <file leaf-file-name="message.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/views/message.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="-252">
               <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -143,26 +130,8 @@
       <file leaf-file-name="login.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/views/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="-172">
               <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rabbitmq_client.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/utils/rabbitmq_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1120">
-              <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rabbitmq_server.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/utils/rabbitmq_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -197,9 +166,6 @@
         <option value="$PROJECT_DIR$/SecondKill/settings.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/http/response.py" />
         <option value="$PROJECT_DIR$/api/views/login.py" />
-        <option value="$PROJECT_DIR$/SecondKill/urls.py" />
-        <option value="$PROJECT_DIR$/api/utils/login_key.py" />
-        <option value="$PROJECT_DIR$/api/view.py" />
         <option value="$PROJECT_DIR$/api/utils/rabbitmq_test/receive.py" />
         <option value="$PROJECT_DIR$/api/utils/rabbitmq_test/send.py" />
         <option value="$PROJECT_DIR$/api/utils/rabbitmq_test/new_task.py" />
@@ -219,6 +185,9 @@
         <option value="$PROJECT_DIR$/api/utils/rabbitmq_client.py" />
         <option value="$PROJECT_DIR$/api/views/message.py" />
         <option value="$PROJECT_DIR$/api/utils/rabbitmq_server.py" />
+        <option value="$PROJECT_DIR$/api/utils/login_key.py" />
+        <option value="$PROJECT_DIR$/SecondKill/urls.py" />
+        <option value="$PROJECT_DIR$/api/view.py" />
       </list>
     </option>
   </component>
@@ -231,9 +200,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-55" />
-    <option name="y" value="62" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="131" />
+    <option name="y" value="162" />
     <option name="width" value="1403" />
     <option name="height" value="914" />
   </component>
@@ -261,8 +230,7 @@
             <path>
               <item name="SecondKill" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecondKill" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="SecondKill" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -347,7 +315,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="rpc_server6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SecondKill" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -355,12 +323,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api/utils/rabbitmq_test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/utils/rabbitmq_test/rpc_server6.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/tests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -410,19 +378,19 @@
     </configuration>
     <list>
       <item itemvalue="Django server.SecondKill" />
-      <item itemvalue="Python.rpc_server6" />
       <item itemvalue="Python.rpc_client6" />
       <item itemvalue="Python.worker2" />
       <item itemvalue="Python.rabbitmq_server" />
       <item itemvalue="Python.rabbitmq_client" />
+      <item itemvalue="Python.tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tests" />
         <item itemvalue="Python.rabbitmq_client" />
         <item itemvalue="Python.rabbitmq_server" />
         <item itemvalue="Python.worker2" />
         <item itemvalue="Python.rpc_client6" />
-        <item itemvalue="Python.rpc_server6" />
       </list>
     </recent_temporary>
   </component>
@@ -440,16 +408,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-44" y="50" width="1122" height="731" extended-state="1" />
-    <editor active="true" />
+    <frame x="105" y="130" width="1122" height="731" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.14759035" side_tool="true" weight="0.28200692" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85240966" visible="true" weight="0.24410774" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32546374" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="7" visible="true" weight="0.07239057" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85240966" weight="0.37710437" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32491583" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17951128" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="7" />
@@ -503,31 +470,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://a895004d-ad70-4eee-99ad-12b7e68eae4a/schema/main/table/social_auth_association">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a895004d-ad70-4eee-99ad-12b7e68eae4a/schema/main/table/social_auth_nonce">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a895004d-ad70-4eee-99ad-12b7e68eae4a/schema/main/table/sqlite_master">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://a895004d-ad70-4eee-99ad-12b7e68eae4a/schema/main/table/social_auth_partial">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -621,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/wsgiref/headers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-783">
-          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/core/servers/basehttp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -713,16 +652,6 @@
           <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SecondKill/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#644#685#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -869,38 +798,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/utils/rabbitmq_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/utils/rabbitmq_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/views/login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="-172">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/views/message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2389#3449#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/utils/login_key.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -914,27 +829,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/view.py">
+    <entry file="file://$PROJECT_DIR$/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="224">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
-            <element signature="e#14#104#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/utils/rabbitmq_client.py">
+    <entry file="file://$PROJECT_DIR$/api/utils/login_key.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        <state relative-caret-position="56">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/utils/rabbitmq_server.py">
+    <entry file="file://$PROJECT_DIR$/SecondKill/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="268">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#644#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/views/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#2389#3449#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/json/encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="181" column="8" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/wsgiref/headers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="141" column="28" lean-forward="true" selection-start-line="141" selection-start-column="28" selection-end-line="141" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1736">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#14#104#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
