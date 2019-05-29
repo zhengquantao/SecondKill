@@ -6,6 +6,7 @@ from django.shortcuts import render, redirect
 from api.models import UserToken, User
 from django.utils.http import is_safe_url
 from .utils.login_key import weibo, qq, weixin
+from django.core.cache import cache
 import uuid
 import json
 import requests
@@ -36,10 +37,11 @@ def proxy_login_weibo(request):
 
         token = str(uuid.uuid4())
         is_user.update(password=token)
+        cache.set(is_user, [token, token, 1], 60*60*6)
     else:
         token = str(uuid.uuid4())
         User.objects.create(user=is_user, password=token)
-
+        cache.set(is_user, [token, token, 1], 60 * 60 * 6)
     # 拿到请求路径
     # path = request.get_host()
     # print(is_safe_url("http://127.0.0.1:8080/home", allowed_hosts={"127.0.0.1:8080"}))
@@ -86,9 +88,11 @@ def proxy_login_qq(request):
     if is_user:
         token = str(uuid.uuid4())
         is_user.update(password=token)
+        cache.set(is_user, [token, token, 1], 60 * 60 * 6)
     else:
         token = str(uuid.uuid4())
         User.objects.create(user=user, password=token)
+        cache.set(is_user, [token, token, 1], 60 * 60 * 6)
 
     # 拿到请求路径
     # path = request.get_host()

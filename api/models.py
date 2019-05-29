@@ -29,3 +29,4 @@ class Order(models.Model):
     user = models.ForeignKey(to='User')
     goods = models.ForeignKey(to='Goods')
     
+    

@@ -175,3 +175,10 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.weixin.WeixinOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 )
+
+# 支付相关配置
+APPID = "2016092300578584"  # 填写自己ID
+NOTIFY_URL = "http://47.94.172.250:80/update_order/"
+RETURN_URL = "http://127.0.0.1:8080/person"
+PRI_KEY_PATH = "keys/private_keys.txt"
+PUB_KEY_PATH = "keys/public_keys.txt"

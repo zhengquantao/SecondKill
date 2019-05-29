@@ -22,6 +22,7 @@ class InterRpcClient(object):
     def on_response(self, ch, method, props, body):
         self.response = body
 
+
     def call(self, n):
         self.response = None
         self.channel.basic_publish(

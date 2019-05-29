@@ -2,17 +2,18 @@ from django.core.cache import cache
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet, ViewSetMixin
-from ..models import Goods
+from ..models import Goods, Order, User
 from ..utils.redis_server import redis_server
 from .list import GoodsSerializer
 from ..utils.rabbitmq_client import InterRpcClient
+from django.db import transaction
 from ast import literal_eval  # 将字符串转化成字典
-from ..utils.activeMQ import send_to_queue, receive_from_queue
+
 
 import time
 
 
-class MessageView(ViewSetMixin, APIView):
+class MessageView(ViewSetMixin, APIView):  
     def add(self, request, *args, **kwargs):
         goods_list = Goods.objects.all()
         for good in goods_list:
@@ -75,7 +76,7 @@ class MessageView(ViewSetMixin, APIView):
             pipe.set(data['number'], count)
             pipe.execute()
 
-        # 事务开始
+        # redis事务开始
         if int(pipe.get(data['number']).decode('utf-8')) > 0:
             try:
                 pipe.multi()
@@ -83,7 +84,17 @@ class MessageView(ViewSetMixin, APIView):
                 # 提交事务
                 count_now = pipe.execute()[0]
                 print(count_now)
-                Goods.objects.filter(number=data['number']).update(count=count_now)
+                try:
+                    # mysql事务
+                    with transaction.atomic():
+                        good_id = Goods.objects.filter(number=data['number'])
+                        user_id = User.objects.filter(user=data['username'])
+                        good_id.update(count=count_now)
+                        Order.objects.create(user=user_id[0], goods=good_id[0], pay_count=0)
+                except Exception as e:
+                    ret["code"] = 1001
+                    ret["error"] = "请求异常"
+                    return Response(ret)
                 # 更改redis数量
                 # redis_server().set(data['number'], count_now)
                 ret['count'] = count_now

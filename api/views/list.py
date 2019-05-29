@@ -23,6 +23,7 @@ class ListView(ViewSetMixin, APIView):
     def list(self, request, *args, **kwargs):
         ret = {"code": 1000, "data": None}
         goods_kill = cache.get("Kill")
+        print(goods_kill)
         if goods_kill:
             ret["data"] = goods_kill
             return Response(ret)
