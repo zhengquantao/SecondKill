@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^login/weibo/', view.proxy_login_weibo),
     url(r'^login/qq$', view.proxy_login_qq),
     url(r'^login/weixin/', view.proxy_login_weixin),
+    url(r'^update_order', view.update_order),
     # 第三方登录组件
     url('', include('social_django.urls', namespace='social'))
 ]

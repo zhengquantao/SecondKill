@@ -3,7 +3,7 @@
 """
 
 from django.shortcuts import render, redirect
-from api.models import UserToken, User
+from api.models import UserToken, User, Order
 from django.utils.http import is_safe_url
 from .utils.login_key import weibo, qq, weixin
 from django.core.cache import cache
@@ -107,3 +107,10 @@ def proxy_login_qq(request):
 def proxy_login_weixin(request):
     pass
 
+
+def update_order(request):
+    out_trade_no = request.GET.get('out_trade_no')
+    good_id = cache.get(out_trade_no)
+    Order.objects.filter(id=good_id).update(pay_count=1)
+    # 2. 根据订单号将数据库中的数据进行更新
+    return redirect('htt://127.0.0.1:8080/update_order/')

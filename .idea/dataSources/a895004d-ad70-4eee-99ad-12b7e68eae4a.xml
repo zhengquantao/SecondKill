@@ -102,11 +102,9 @@
     </column>
     <index id="40" parent="7" name="api_order_goods_id_e5666960">
       <ColNames>goods_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="41" parent="7" name="api_order_user_id_52781ff0">
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="42" parent="7">
       <ColNames>id</ColNames>
@@ -161,7 +159,6 @@
     <index id="52" parent="9" name="sqlite_autoindex_api_usertoken_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="53" parent="9">
@@ -191,7 +188,6 @@
     <index id="58" parent="10" name="sqlite_autoindex_auth_group_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="59" parent="10">
@@ -221,16 +217,13 @@
     <index id="64" parent="11" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <ColNames>group_id
 permission_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="65" parent="11" name="auth_group_permissions_group_id_b120cbf9">
       <ColNames>group_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="66" parent="11" name="auth_group_permissions_permission_id_84c5c92e">
       <ColNames>permission_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="67" parent="11">
       <ColNames>id</ColNames>
@@ -270,12 +263,10 @@ permission_id</ColNames>
     <index id="74" parent="12" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <ColNames>content_type_id
 codename</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="75" parent="12" name="auth_permission_content_type_id_2f476e4b">
       <ColNames>content_type_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="76" parent="12">
       <ColNames>id</ColNames>
@@ -344,7 +335,6 @@ codename</ColNames>
     <index id="89" parent="13" name="sqlite_autoindex_auth_user_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>username</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="90" parent="13">
@@ -374,16 +364,13 @@ codename</ColNames>
     <index id="95" parent="14" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <ColNames>user_id
 group_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="96" parent="14" name="auth_user_groups_user_id_6a12ed8b">
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="97" parent="14" name="auth_user_groups_group_id_97559544">
       <ColNames>group_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="98" parent="14">
       <ColNames>id</ColNames>
@@ -418,16 +405,13 @@ group_id</ColNames>
     <index id="104" parent="15" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <ColNames>user_id
 permission_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="105" parent="15" name="auth_user_user_permissions_user_id_a95ead1b">
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="106" parent="15" name="auth_user_user_permissions_permission_id_1fbb5f2c">
       <ColNames>permission_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="107" parent="15">
       <ColNames>id</ColNames>
@@ -484,11 +468,9 @@ permission_id</ColNames>
     </column>
     <index id="118" parent="16" name="django_admin_log_content_type_id_c4bce8eb">
       <ColNames>content_type_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="119" parent="16" name="django_admin_log_user_id_c564eba6">
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="120" parent="16">
       <ColNames>id</ColNames>
@@ -523,7 +505,6 @@ permission_id</ColNames>
     <index id="126" parent="17" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <ColNames>app_label
 model</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="127" parent="17">
@@ -573,12 +554,10 @@ model</ColNames>
     <index id="136" parent="19" name="sqlite_autoindex_django_session_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>session_key</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="137" parent="19" name="django_session_expire_date_a5c62663">
       <ColNames>expire_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="138" parent="19">
       <ColNames>session_key</ColNames>
@@ -624,7 +603,6 @@ model</ColNames>
     <index id="146" parent="20" name="social_auth_association_server_url_handle_078befa2_uniq">
       <ColNames>server_url
 handle</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="147" parent="20">
@@ -660,16 +638,13 @@ handle</ColNames>
     <index id="153" parent="21" name="social_auth_code_email_code_801b2d02_uniq">
       <ColNames>email
 code</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="154" parent="21" name="social_auth_code_code_a2393167">
       <ColNames>code</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="155" parent="21" name="social_auth_code_timestamp_176b341f">
       <ColNames>timestamp</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="156" parent="21">
       <ColNames>id</ColNames>
@@ -700,7 +675,6 @@ code</ColNames>
       <ColNames>server_url
 timestamp
 salt</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="162" parent="22">
@@ -740,11 +714,9 @@ salt</ColNames>
     </column>
     <index id="169" parent="23" name="social_auth_partial_token_3017fea3">
       <ColNames>token</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="170" parent="23" name="social_auth_partial_timestamp_50f2119f">
       <ColNames>timestamp</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="171" parent="23">
       <ColNames>id</ColNames>
@@ -779,12 +751,10 @@ salt</ColNames>
     <index id="177" parent="24" name="social_auth_usersocialauth_provider_uid_e6b5e668_uniq">
       <ColNames>provider
 uid</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="178" parent="24" name="social_auth_usersocialauth_user_id_17d28448">
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="179" parent="24">
       <ColNames>id</ColNames>

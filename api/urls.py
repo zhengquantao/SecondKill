@@ -9,5 +9,5 @@ urlpatterns = [
     url('^add/$', message.MessageView.as_view({'post': 'add'})),
     url('^person/$', person.PersonView.as_view({'post': "person"})),
     url('^pay/alipay/$', pay.AlipayView.as_view({'post': 'alipay'})),
-    url('^update_order/$', pay.AlipayView.as_view({'post': 'update_order'}))
+    # url('^update_order/$', pay.AlipayView.as_view({'post': 'update_order'}))
 ]
